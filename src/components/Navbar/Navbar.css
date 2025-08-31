@@ -12,8 +12,22 @@
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
     padding: 10px 20px; /* إضافة بعض الحشو */
-    font-family: 'Cairo', sans-serif !important;  
+    font-family: 'El Messiri', sans-serif !important;  
   direction: rtl; /* لو الموقع بالعربي */
   text-align: right; /* يخلي النصوص تبدأ من اليمين */
+    
 }
 
+
+/* small screen */
+@media (max-width: 768px) {
+    .navBar {
+        padding: 10px; /* تقليل الحشو على الشاشات الصغيرة */
+    }
+    .navbar-brand {
+        font-size: 1.2rem; /* تقليل حجم الخط على الشاشات الصغيرة */
+    }
+    .nav-link {
+        font-size: 0.9rem; /* تقليل حجم الخط على الشاشات الصغيرة */
+    }
+}
