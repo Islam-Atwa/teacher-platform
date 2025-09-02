@@ -4,7 +4,7 @@ import logo from "../Navbar/logo.png";
 
 function Navbar() {
   return (
-    <nav className="bg-white border-gray-200 dark:bg-white-900 dark:border-gray-700 shadow-xl fixed w-full">
+    <nav className="bg-white border-gray-200 dark:bg-white-900 dark:border-gray-700 fixed w-full nav-shadow z-index">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#" className="flex gap-5 items-center space-x-8 rtl:space-x-reverse">
       <img
