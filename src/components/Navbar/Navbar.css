@@ -31,3 +31,13 @@
         font-size: 0.9rem; /* تقليل حجم الخط على الشاشات الصغيرة */
     }
 }
+
+/*  */
+.nav-shadow{
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+
+}
+
+.z-index{
+    z-index: 20;
+}

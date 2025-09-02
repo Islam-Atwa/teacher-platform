@@ -200,3 +200,15 @@
     </div>
   </div>
 </nav>
+
+
+
+
+  <section className="hero">
+    <div>
+      <h1>الوضع الداكن / الفاتح</h1>
+      <button onclick="document.body.classList.toggle('dark')">
+        تبديل الوضع
+      </button>
+    </div>
+  </section>
