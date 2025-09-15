@@ -34,19 +34,30 @@
             ref={playerRef}
             icon={bookIcon}
             loading={lazy}
-            c
+            
             loop
           />
               
           </button>
-          <div className="py-3 px-5 sm:ms-4 text-sm font-medium">
-              <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
-                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
-                    </svg>
-                  <span class="sr-only">Facebook page</span>
-              </a>
+          {/* Social Icon */}
+          <div class="flex justify-center items-center gap-2.5 social-icon">
+      <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+      <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+    </svg>
+  </a>
 
+  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23.5 6.2a2.9 2.9 0 0 0-2-2.1C19.2 3.5 12 3.5 12 3.5s-7.2 0-9.5.6a2.9 2.9 0 0 0-2 2.1A30 30 0 0 0 0 12a30 30 0 0 0 .5 5.8 2.9 2.9 0 0 0 2 2.1c2.3.6 9.5.6 9.5.6s7.2 0 9.5-.6a2.9 2.9 0 0 0 2-2.1A30 30 0 0 0 24 12a30 30 0 0 0-.5-5.8zM9.5 15.5v-7l6 3.5-6 3.5z"/>
+    </svg>
+  </a>
+
+  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M9.993 15.924 9.82 19.52c.361 0 .518-.155.706-.34l1.694-1.637 3.514 2.578c.645.356 1.107.17 1.28-.597l2.32-10.89c.236-1.059-.383-1.47-1.024-1.214L3.64 11.205c-1.043.419-1.03 1.004-.178 1.27l4.96 1.55 7.632-4.816c.36-.239.688-.106.418.153l-6.48 5.562z"/>
+    </svg>
+  </a>
           </div>
         </div>
       </div>
