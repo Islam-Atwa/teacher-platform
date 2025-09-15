@@ -1,7 +1,7 @@
 :root {
-    --bg: #b2ddf4;
-    --grid-thin: rgba(0,0,0,.08);
-    --grid-bold: rgba(0,0,0,.12);
+    --bg: rgb(226, 245, 249);
+    --grid-thin: rgba(70, 58, 58, 0.08);
+    --grid-bold: rgb(187, 184, 184);
     --text: #0f172a;
 }
 
@@ -39,15 +39,21 @@ button {
     cursor: pointer;
 }
 
+
 .student{
+
     width: 700px;
     border-radius: 4%;
 }
+
+
 
 .student-container{
     padding-top: 30px;
     position: relative;
     z-index: 0;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .student-container::after {
@@ -89,3 +95,19 @@ button {
         padding-top: 10px;
     }
 }
+.icon-Book{
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 2;
+    border-radius: 16px;
+}
+
+
+
+
+/* .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+} */
