@@ -2,8 +2,10 @@
   // import reactLogo from './assets/react.svg'
   // import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar/Navbar.jsx';
-import HeroSection from './components/HeroSection/HeroSection.jsx'
+import HeroSection from './components/HeroSection/HeroSection.jsx';
+import DividerSection from './components/DividerSection/Divider.jsx';
   import './App.css';
+import Divider from './components/DividerSection/Divider.jsx';
 
 function App() {
 
@@ -12,6 +14,8 @@ function App() {
         {/* <h1>Teacher Platform</h1> */}
       <Navbar />
       <HeroSection/>
+      {/* <Divider/> */}
+
         
     </>
   )
