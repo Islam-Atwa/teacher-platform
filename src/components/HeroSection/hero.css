@@ -31,6 +31,12 @@ body {
     background-size: 40px 40px, 40px 40px, 200px 200px, 200px 200px;
 }
 
+.your-section-class {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
 h1 { font-size: 2.5rem; }
 button {
     margin-top: 20px;
@@ -41,7 +47,7 @@ button {
 
 
 .student{
-
+    margin: 0;
     width: 700px;
     border-radius: 4%;
 }
@@ -111,3 +117,11 @@ button {
     align-items: center;
     gap: 10px;
 } */
+
+.divider-svg {
+  display: block;       /* مهم جدًا: يمنع الفراغ تحت الـ SVG */
+  line-height: 0;       /* يلغي أي ارتفاع سطر إضافي */
+  margin: 0;
+  padding: 0;
+}
+

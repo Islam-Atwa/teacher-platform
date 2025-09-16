@@ -5,15 +5,18 @@
   import {useRef } from 'react'; 
   import { Player } from '@lordicon/react'; // lordion libraary for animatin Icon
   import bookIcon from '../HeroSection/bookAnimate3.json';
+  import  wave  from "../HeroSection/wave.svg";
 
 
 
   function HeroSection() {
     const playerRef  = useRef(null);    
     return (
-      <section className="hero ">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16 bg-transparent small-screen">
-      <div className="flex flex-col justify-center">
+      <section className="hero">
+        <div className="your-section-class px-4 mx-auto max-w-screen-xl grid lg:grid-cols-2 gap-8 
+                  !mb-0 !pb-0 py-8 lg:py-16">
+          {/* Text */}
+          <div className="flex flex-col justify-center">
         <h1 className="mb-6 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl">
           أ. إبراهيم عطوه
         </h1>
@@ -60,13 +63,14 @@
   </a>
           </div>
         </div>
-      </div>
-      <div className='student-container'>
+          </div>
+            {/* Image */}
+          <div className='student-container'>
         <img className='student3' src={student3} alt="student" />
-      </div>
-    </div>
-        <svg className='p-0 m-0' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L48,58.7C96,85,192,139,288,133.3C384,128,480,64,576,53.3C672,43,768,85,864,133.3C960,181,1056,235,1152,240C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-      </section>
+          </div>
+        </div>
+        <img src={wave} alt="wave swction" className='m-0 p-0 relative top-0' />
+        </section>
     );
   }
 

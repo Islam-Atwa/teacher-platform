@@ -1,4 +1,4 @@
-import  WaveDivider  from "../DividerSection/wave.svg";
+// import  WaveDivider  from "../DividerSection/wave.svg";
 
 function Divider() {
   return (
