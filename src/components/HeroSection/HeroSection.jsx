@@ -13,7 +13,7 @@
     const playerRef  = useRef(null);    
     return (
       <section className="hero">
-        <div className="your-section-class px-4 mx-auto max-w-screen-xl grid lg:grid-cols-2 gap-8 
+        <div className="mx-auto px-4 your-section-class px-4 mx-auto max-w-screen-xl grid lg:grid-cols-2 gap-8 
                   !mb-0 !pb-0 py-8 lg:py-16">
           {/* Text */}
           <div className="flex flex-col justify-center">
