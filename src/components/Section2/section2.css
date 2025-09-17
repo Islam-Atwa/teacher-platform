@@ -1,0 +1,19 @@
+.card-hover:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s;
+}
+
+.card-hover img{
+    object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.card-hover:hover img{
+    animation: rotateAnim 0.6s ease;
+}
+
+
+@keyframes rotateAnim {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(15deg) scale(1.1); }
+  100% { transform: rotate(0deg) scale(1); }
+}
