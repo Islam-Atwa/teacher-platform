@@ -7,6 +7,7 @@ import DividerSection from './components/DividerSection/Divider.jsx';
   import './App.css';
 import Divider from './components/DividerSection/Divider.jsx';
 import StudyWithMe from './components/Section2/Section2.jsx';
+import StudyMatrials from './components/StudyMatrials/StudyMatrials.jsx';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <HeroSection/>
       {/* <Divider/> */}
       <StudyWithMe/>
+      <StudyMatrials/>
 
         
     </>
