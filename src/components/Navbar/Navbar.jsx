@@ -31,6 +31,7 @@ function Navbar() {
         fill="none"
         viewBox="0 0 17 14"
       >
+        
         <path
           stroke="currentColor"
           strokeLinecap="round"
@@ -40,10 +41,10 @@ function Navbar() {
         />
       </svg>
     </button>
-    <div className="hidden w-full md:block md:w-auto" id="navbar-multi-level">
-      <ul className="flex gap-4 flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-white-800 md:dark:bg-white-900 dark:border-gray-700">
+    <div className="hidden w-full md:block md:w-auto items-center" id="navbar-multi-level">
+      <ul className="flex gap-4 flex-col items-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-white-800 md:dark:bg-white-900 dark:border-gray-700">
 
-        <li>
+        <li >
           <button
             id="dropdownNavbarLink"
             data-dropdown-toggle="dropdownNavbar"
