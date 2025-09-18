@@ -9,8 +9,8 @@ import './StudyMatrials.css';
 
 const StudyMatrials = () => {
   return (
-      <div className="marquee">
-        <h2 className="container mx-auto px-4 marquee_header">المواد الدراسية</h2>
+      <section className="marquee">
+        <h2 className="container section-title text-center">المواد الدراسية</h2>
         <div className="marquee__inner">
           <div className="marquee__group">
 
@@ -50,7 +50,7 @@ const StudyMatrials = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
   );
 }
 

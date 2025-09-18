@@ -8,6 +8,7 @@ import DividerSection from './components/DividerSection/Divider.jsx';
 import Divider from './components/DividerSection/Divider.jsx';
 import StudyWithMe from './components/Section2/Section2.jsx';
 import StudyMatrials from './components/StudyMatrials/StudyMatrials.jsx';
+import CourseSection from './components/CourseSection/Course.jsx';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       {/* <Divider/> */}
       <StudyWithMe/>
       <StudyMatrials/>
+      <CourseSection/>  
 
         
     </>
