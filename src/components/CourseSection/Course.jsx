@@ -1,6 +1,6 @@
 import React from "react";
 import test from '../CourseSection/test.jpg';
-import courseData from '../CourseSection/CourseData';
+// import courseData from '../CourseSection/CourseData';
 
 const Course = () =>{
     return(
