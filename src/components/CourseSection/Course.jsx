@@ -1,6 +1,7 @@
 import React from "react";
 import test from '../CourseSection/test.jpg';
-import courseData from '../CourseSection/CourseData';
+import star from '../CourseSection/star.png';
+// import courseData from '../CourseSection/CourseData';
 
 const Course = () =>{
     return(
@@ -18,13 +19,13 @@ const Course = () =>{
                             <p className="text-gray-600 text-sm mb-3 flex-grow">كورس هيراجع معاك علي اساسيات الرياضيات</p>
                             {/* Price And Button */}
                             <div className="flex items-center justify-between mt-2">
-                                <span className="text-green-600 font-bold text-base">100 جنيه</span>
                                 <button class="cursor-pointer transition-all bg-teal-500 text-white px-6 py-2 rounded-lg
                                     border-blue-600
                                     border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
                                     active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
                                     تفاصيل الكورس
                                 </button>
+                                <span className="text-green-600 font-bold text-base">100 جنيه</span>
                             </div>
                         </div>
                     </div>
@@ -33,6 +34,10 @@ const Course = () =>{
                         />
                         {/* text Card */}
                         <div className="w-full h-44 object-cover">
+                            <div className="flex items-center academic-stages mt-6 academic-stages mt-6">
+                                <img className="w-8 h-8 object-contain" src={star}  srcset="" />
+                                <span className="fml-2">الصف الثالث الثانوي</span>
+                            </div>
                             <h3 className="mt-4 text-lg font-bold">كورس الأساسيات</h3>
                             <p className="text-gray-600 text-sm mb-3 flex-grow">كورس هيراجع معاك علي اساسيات الرياضيات</p>
                             {/* Price And Button */}
