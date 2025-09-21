@@ -8,6 +8,7 @@ import './section2.css';
 function studyWithMe() {
     return (
         <section>
+            
             <div className="container mx-auto px-2">
                 <h1 className="max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">ليه تذاكر معانا</h1>
                 <div className="max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
