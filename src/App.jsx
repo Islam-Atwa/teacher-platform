@@ -10,6 +10,8 @@ import StudyWithMe from './components/Section2/Section2.jsx';
 import StudyMatrials from './components/StudyMatrials/StudyMatrials.jsx';
 import CourseSection from './components/CourseSection/Course.jsx';
 import AcademicStages from './components/AcademicStages/AcademicStages.jsx';
+import Footer from './components/FooterSection/Footer.jsx';
+
 
 function App() {
 
@@ -23,6 +25,7 @@ function App() {
       <StudyMatrials/>
       <CourseSection/> 
       <AcademicStages/>
+      <Footer/>
 
         
     </>
