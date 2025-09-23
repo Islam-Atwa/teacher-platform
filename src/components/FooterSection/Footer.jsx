@@ -1,4 +1,4 @@
-import logo from "../Navbar/logo.png";
+import logo from "../Navbar/logo0.png";
 
 const Footer = ()=>{
     return(
