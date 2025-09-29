@@ -175,7 +175,7 @@ export default function Navbar() {
     <header className="bg-white fixed w-full z-50 border-b border-gray-200">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-1 lg:px-"
+        className="mx-auto flex max-w-8xl items-center justify-between px-3 lg:px-8 py-1"
       >
         {/* logo brand AND Title 1*/}
         <div className="flex lg:flex-2">
