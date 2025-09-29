@@ -20,6 +20,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
+
 import {
   ChevronDownIcon,
   PhoneIcon,
@@ -33,22 +34,22 @@ import logo from "./logo.svg";
 
 const products = [
   {
-    name: "Analytics",
-    description: "Get a better understanding of your traffic",
+    name: "المرحلة الإعدادية",
+    // description: "Get a better understanding of your traffic",
     href: "#",
     icon: ChartPieIcon,
   },
 
 
   {
-    name: "Integrations",
-    description: "Connect with third-party tools",
+    name: "المرحلة الثانوية",
+    // description: "Connect with third-party tools",
     href: "#",
     icon: SquaresPlusIcon,
   },
   {
-    name: "Automations",
-    description: "Build strategic funnels that will convert",
+    name: "المرحلة الثانوية",
+    // description: "Build strategic funnels that will convert",
     href: "#",
     icon: ArrowPathIcon,
   }
@@ -59,6 +60,7 @@ const products = [
 // ];
 
 export default function Navbar() {
+  // Dark mode style button
   const StyledWrapper = styled.div`
     .switch {
       font-size: 17px;
@@ -209,7 +211,7 @@ export default function Navbar() {
         {/* Links In Large Screen 3*/}
         <PopoverGroup className="hidden lg:flex flex-2 lg:gap-x-10 items-center justify-cente">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold mb-3 hover:text-emerald-600">
+            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold mb-5 mt-2 hover:text-emerald-600">
               المراحل الدراسية
               <ChevronDownIcon
                 aria-hidden="true"
@@ -246,21 +248,6 @@ export default function Navbar() {
                   </div>
                 ))}
               </div>
-              {/* <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                {callsToAction.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
-                  >
-                    <item.icon
-                      aria-hidden="true"
-                      className="size-5 flex-none text-gray-400"
-                    />
-                    {item.name}
-                  </a>
-                ))}
-              </div> */}
             </PopoverPanel>
           </Popover>
 
