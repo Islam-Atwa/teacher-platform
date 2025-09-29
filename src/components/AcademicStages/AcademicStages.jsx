@@ -11,7 +11,7 @@ const AcademicStages = () => {
       <div className="bg-gradient-to-bl from-blue-50 to-violet-50 flex items-center justify-center lg:h-screen">
 
       <div className="container mx-auto mx-auto p-4 mt-14">
-      <h2 className="container section-title"> المراحل الدراسية </h2>
+      <h1 className="max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8"> المراحل <span className='font-extrabold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4 leading-tight'>الدراسية</span> </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {/* <!-- Replace this with your grid items --> */}
           <div className="bg-white rounded-lg border p-4">

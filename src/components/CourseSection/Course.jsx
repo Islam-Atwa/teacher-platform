@@ -7,7 +7,7 @@ const Course = () =>{
     return(
         <section>
             <div className="container mx-auto px-4 mt-10">
-                <h2 className="section-title">أحدث الكورسات</h2>
+                <h1 className="max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">أحدث <span className="font-extrabold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4 leading-tight">الكورسات</span></h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {/* container per card */}
                     <div className="bg-white-100 p-4 shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition duration-300 flex flex-col" >
