@@ -1,19 +1,22 @@
-
+import test from '../CourseSection/test.jpg';
+import star from '../CourseSection/star.png';
 const courseData=[
     {
         id:1,
-        tittle: 'كو رس أساسيات الرياضيات',
+        title: 'كو رس أساسيات الرياضيات',
         description: 'فيالكورس دا هيساعدك تراجع علي الفاتك ',
-        image : '/image.png',
-        price : '200'
-    },       
+        img: test,
+        price : '200',
+        icon: star,
+    },         
     {
-        id:1,
-        tittle: 'كو رس أساسيات الرياضيات',
+        id:2,
+        title: 'كو رس أساسيات الرياضيات',
         description: 'فيالكورس دا هيساعدك تراجع علي الفاتك ',
-        image : '/image.png',
-        price : '200'
-    }  
+        img: test,
+        price : '200',
+        icon: star,
+    },         
 ];
 
 

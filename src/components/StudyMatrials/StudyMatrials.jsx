@@ -9,18 +9,18 @@ import './StudyMatrials.css';
 
 const StudyMatrials = () => {
   return (
-    <section className="marquee container mx-auto px-2 ">
-      <h1 className="max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 mb-6">
+    <section className="marquee  mx-auto px-8 ">
+      <h1 className="max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
         المواد{" "}
         <span className="font-extrabold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4 leading-tight">
           الدراسية
         </span>
       </h1>
-      <div className="bg-orange-300">
+      <div className="">
         <div className="marquee__inner">
           <div className="marquee__group ">
             <div className="parent ">
-              <span className='text-indigo-700 text-3xl font-extrabold bg-white rounded-4xl p-1.5 px-4' >تفاضل</span>
+              <span className='text-indigo-700 text-3xl font-extrabold bg-gray-100 rounded-4xl p-1.5 px-4' >تفاضل</span>
               {/* <img src={fxIcon} alt="" srcset="" /> */}
             </div>
             <div className="parent text-white">

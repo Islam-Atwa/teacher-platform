@@ -7,8 +7,8 @@
 
 body.dark {
     --bg: #0f172a;
-    --grid-thin: rgba(255,255,255,.07);
-    --grid-bold: rgba(255,255,255,.15);
+    --grid-thin: rgba(255, 255, 255, .07);
+    --grid-bold: rgba(255, 255, 255, .15);
     --text: #f1f5f9;
 }
 
@@ -24,15 +24,18 @@ body {
     place-items: center;
     background-color: var(--bg);
     background-image:
-    linear-gradient(to right, var(--grid-thin) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--grid-thin) 1px, transparent 1px),
-    linear-gradient(to right, var(--grid-bold) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--grid-bold) 1px, transparent 1px);
+        linear-gradient(to right, var(--grid-thin) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-thin) 1px, transparent 1px),
+        linear-gradient(to right, var(--grid-bold) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-bold) 1px, transparent 1px);
     background-size: 40px 40px, 40px 40px, 200px 200px, 200px 200px;
 }
 
 
-h1 { font-size: 2.5rem; }
+h1 {
+    font-size: 2.5rem;
+}
+
 button {
     margin-top: 20px;
     padding: 10px 20px;
@@ -41,7 +44,7 @@ button {
 }
 
 
-.student{
+.student {
     margin: 0;
     width: 700px;
     border-radius: 4%;
@@ -49,7 +52,7 @@ button {
 
 
 
-.student-container{
+.student-container {
     padding-top: 30px;
     position: relative;
     z-index: 0;
@@ -58,19 +61,21 @@ button {
 }
 
 .student-container::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  inset: 0;
-  height: 100%;
-  background-image: url('./bgmath.png');
-  top: 50px;
-  background-size: cover; /* أو contain حسب المطلوب */
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1; /* يخلي الخلفية ورا */
-  border-radius: 50% 50% 50% 50%;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    inset: 0;
+    height: 100%;
+    background-image: url('./bgmath.png');
+    top: 50px;
+    background-size: cover;
+    /* أو contain حسب المطلوب */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    /* يخلي الخلفية ورا */
+    border-radius: 50% 50% 50% 50%;
 }
 
 
@@ -85,9 +90,10 @@ button {
 } */
 
 .divider-svg {
-  display: block;       /* مهم جدًا: يمنع الفراغ تحت الـ SVG */
-  line-height: 0;       /* يلغي أي ارتفاع سطر إضافي */
-  margin: 0;
-  padding: 0;
+    display: block;
+    /* مهم جدًا: يمنع الفراغ تحت الـ SVG */
+    line-height: 0;
+    /* يلغي أي ارتفاع سطر إضافي */
+    margin: 0;
+    padding: 0;
 }
-

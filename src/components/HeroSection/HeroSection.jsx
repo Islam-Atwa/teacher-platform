@@ -3,6 +3,8 @@ import '../HeroSection/hero.css';
 import student3 from '../HeroSection/student3.png';
 import { Player } from '@lordicon/react';
 import bookIcon from '../HeroSection/bookAnimate3.json';
+import {useTheme} from '../Context/ThemeContext'
+
 // import wave from "../HeroSection/wave.svg";
 
 function HeroSection() {
@@ -18,11 +20,12 @@ function HeroSection() {
     playerRef.current?.goToFirstFrame();
   };
 
+  const {darkMode} = useTheme();
   return (
-    <section className="hero">
+    <section className={`hero ${darkMode ? "bg-gray-900 text-white h-full" : "bg-gray-200"}`}>
       <div
-        className="mx-auto p-1 px-6 grid grid-cols-1 md:text-center lg:grid-cols-2 lg:text-start gap-8
-                   max-w-7xl max-w-screen-xl !mb-0 !pb-0 py-8 lg:py-16"
+        className="mx-auto px-12 grid grid-cols-1 md:text-center lg:grid-cols-2 lg:text-start gap-8
+                   max-w-7xl max-w-screen-xl !mb-0 !pb-0 py-8 lg:py-16 "
       >
         {/* Text */}
         <div className="flex flex-col justify-center">

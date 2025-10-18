@@ -5,12 +5,19 @@ import 'flowbite';
 import "@tailwindplus/elements";
 // import "@tailwindplus/elements/style.css";
 
+import {ThemeProvider} from './components/Context/ThemeContext.jsx'
+
+// import { ThemeProvider } from './context/ThemeContext.jsx';
+
+
 
 
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </StrictMode>
 )
