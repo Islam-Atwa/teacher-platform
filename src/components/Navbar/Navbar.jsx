@@ -177,7 +177,8 @@ export default function Navbar() {
 
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 bg-white shadow-sm border-b border-gray-200 dark:border-gray-700 ${darkMode ? "bg-gray-900 text-white" : "bg-gray-200"}  `}>
+    <section className={`${darkMode ? "bg-gray-900 text-white" : ""}`}>
+    <header className={`fixed top-0 left-0 w-full z-50 shadow-sm border-b border-gray-200 dark:border-gray-700 ${darkMode ? "dark:bg-gray-800 dark:text-white" : "bg-white"}  `}>
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-8xl items-center justify-between px-3 lg:px-8 py-1" 
@@ -193,7 +194,7 @@ export default function Navbar() {
               />
             </div>
 
-            <h2 className="sr-nly text-2xl text-gray-900 hover:text-gray-700">
+            <h2 className="sr-nly text-2xl  hover:text-gray-700">
               منصة <span>للرياضيات</span>
             </h2>
           </a>
@@ -204,7 +205,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center  rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center  rounded-md p-2.5"
           >
             <span className="sr-only">Open main menu</span>
             <Bars3Icon aria-hidden="true" className="size-6" />
@@ -214,7 +215,7 @@ export default function Navbar() {
         {/* Links In Large Screen 3*/}
         <PopoverGroup className="hidden lg:flex flex-2 lg:gap-x-10 items-center justify-center ">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-gray-800 text-sm/6 font-semibold mb-3 hover:text-emerald-600">
+            <PopoverButton className="flex items-center gap-x-1  text-sm/6 font-semibold mb-3 hover:text-emerald-600">
               المراحل الدراسية
               <ChevronDownIcon
                 aria-hidden="true"
@@ -255,10 +256,10 @@ export default function Navbar() {
             </PopoverPanel>
           </Popover>
 
-          <a href="#" className="text-sm/6 font-semibold text-gray-800">
+          <a href="#" className="text-sm/6 font-semibold ">
             الكتب
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-800">
+          <a href="#" className="text-sm/6 font-semibold">
             الكورسات
           </a>
         </PopoverGroup>
@@ -364,5 +365,7 @@ export default function Navbar() {
         </Dialog>
       </nav>  
     </header>
+
+    </section>
   );
 }

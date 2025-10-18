@@ -7,8 +7,8 @@
   padding: 0.5rem 1rem;
   border-radius: 9999px;
   border: 2px solid rgba(0,0,0,0.06);
-  background: rgba(249,250,251,0.9); /* light bg */
-  color: #1f2937; /* default text color (dark) */
+  /* background: rgba(249,250,251,0.9); light bg */
+  /* color: #1f2937; default text color (dark) */
   overflow: hidden;
   cursor: pointer;
   z-index: 1;
@@ -40,7 +40,7 @@
   padding: 0.125rem 0.5rem; 
   border-radius: 9999px;
   background: transparent;
-  color: #111827;          
+  /* color: #111827;           */
   transition: background .2s ease, color .2s ease, transform .2s ease;
 }
 
@@ -62,7 +62,7 @@
   transition: transform .35s ease, background .25s ease, border-color .25s ease, color .25s ease;
   transform: rotate(-45deg);
   z-index: 2; 
-  color: #1f2937;
+  /* color: #; */
   background: transparent;
 }
 

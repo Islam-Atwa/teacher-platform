@@ -2,20 +2,20 @@
     overflow: hidden;
     /* hide the scrolling overflow */
     width: 100%;
-    -webkit-mask-image: linear-gradient(
+    /* -webkit-mask-image: linear-gradient(
       to right,
       transparent 0%,
       black 10%,
       black 90%,
       transparent 100%
-    );
-    mask-image: linear-gradient(
+    ); */
+    /* mask-image: linear-gradient(
       to right,
       transparent 0%,
       black 10%,
       black 90%,
       transparent 100%
-    );
+    ); */
   }
   /* .section-title {
     font-size: 35px;
@@ -38,7 +38,7 @@
     white-space: nowrap;
     /* background:#008080; */
     color: blueviolet;
-    padding: 4px 16px 4px 12px;
+    padding: 0px 1px 1px 1px;
     border-radius: 6px;
     font-size: 1.2rem;
   }
