@@ -2,7 +2,7 @@ import logo from "../Navbar/logo0.png";
 
 const Footer = ()=>{
     return(
-        <footer className="bg-gray-900 text-white px-6 py-6 mt-10">
+      <footer className="bg-gray-950 text-white px-6 py-6 ">
   <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
     {/* <!-- Right side --> */}
     <div className="flex items-center gap-3 mb-4 md:mb-0">
@@ -11,7 +11,7 @@ const Footer = ()=>{
     </div>
 
     {/* <!-- Left side --> */}
-    <ul class="flex justify-center items-center mt-5 space-x-5">
+    <ul class="flex justify-center items-center mt-5 space-x-5 mb-8">
         {/* <h3>تابعنا علي حسابات السوشيال ميديا</h3> */}
   {/* <!-- Facebook --> */}
   <li>
@@ -35,10 +35,10 @@ const Footer = ()=>{
   </li>
 
 {/* يوتيوب */}
-  <li>
+  <li className="mb-6">
     <a
       href="#"
-      class="text-gray-500 hover:text-white-900 dark:hover:text-white dark:text-gray-400"
+      class="text-gray-500 hover:text-white-900 dark:hover:text-white dark:text-gray-400 "
     >
       <svg
         viewBox="0 0 24 24"

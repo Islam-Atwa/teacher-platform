@@ -2,15 +2,15 @@
   // import reactLogo from './assets/react.svg'
   // import viteLogo from '/vite.svg';
 
-import Navbar from './components/Navbar/Navbar.jsx';
+import Navbar from './components/Navbar/Navbar.jsx'; // NavBar 0
+import HeroSection from './components/HeroSection/HeroSection.jsx'; //Hero Section 1
+import WhyUs from './components/Section2/WhyUs.jsx';
 
 
 
-import HeroSection from './components/HeroSection/HeroSection.jsx';
 import DividerSection from './components/DividerSection/Divider.jsx';
   import './App.css';
 import Divider from './components/DividerSection/Divider.jsx';
-import StudyWithMe from './components/Section2/Section2.jsx';
 import StudyMatrials from './components/StudyMatrials/StudyMatrials.jsx';
 import CourseSection from './components/CourseSection/Course.jsx';
 import AcademicStages from './components/AcademicStages/AcademicStages.jsx';
@@ -27,7 +27,7 @@ function App() {
       <Navbar />
       <HeroSection/>
       {/* <Divider/> */}
-      <StudyWithMe/>
+      <WhyUs/>
       <StudyMatrials/>
       <CourseSection/> 
       <AcademicStages/>
