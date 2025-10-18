@@ -6,22 +6,25 @@ import supportIcon from '../Section2/supportIcon.png';
 import analysisIcon from '../Section2/analysisIcon.png';
 import studentMath from '../Section2/matstudentAI.png';
 
+import {useTheme} from '../Context/ThemeContext'
+
 // import studentMath from '../Section2/studentMath.svg';
 import './section2.css';
 function studyWithMe() {
+    const {darkMode} = useTheme();
     return (
-        <section>
+        <section className={`${darkMode ? "bg-gray-900 text-white" : ""}`}>
             
-            <div className="container mx-auto px-2">
+            <div className="mx-auto px-8">
                 <h1 className="max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">ليه تذاكر معانا
                     <span className=' font-extrabold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4 leading-tight'> رياضيات ؟</span>
                 </h1>
-                <div className="max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+                <div className={`max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 ${darkMode ? "bg-gray-900 text-white" : ""}`}>
                 <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 md:grid-cols-1 md:items-center md:gap-8">
                     {/* Card */}
-                    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 lg:gap-8">
+                    <div className={`grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 lg:gap-8 ${darkMode ? "bg-gray-900 text-white" : ""}`}>
                         {/* 1 */}
-                        <div className="rounded-lg border border-gray-100 bg-white p-4 shadow-xs transition hover:shadow-lg sm:p-6 
+                        <div className="rounded-lg border border-gray-100  p-4 shadow-xs transition hover:shadow-lg sm:p-6 
                                         flex flex-col items-center justify-center text-center card-hover" >
                             <img
                                 src={classIcon}

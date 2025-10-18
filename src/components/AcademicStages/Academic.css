@@ -21,7 +21,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: #10b981; 
+  background: oklch(51.1% 0.262 276.966); 
   border-radius: 9999px;
   transform: translateX(-110%); 
   transition: transform .45s cubic-bezier(.2,.8,.2,1);
@@ -69,7 +69,7 @@
 .cta-button:hover .cta-icon{
   transform: rotate(-90deg);
   background: rgba(255,255,255,0.9);
-  color: #000000; /* أيقونة سوداء عند hover */
+  color: oklch(65.6% 0.241 354.308); /* أيقونة سوداء عند hover */
 }
 
 .cta-icon path {

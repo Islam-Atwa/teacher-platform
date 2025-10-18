@@ -3,6 +3,9 @@
   // import viteLogo from '/vite.svg';
 
 import Navbar from './components/Navbar/Navbar.jsx';
+
+
+
 import HeroSection from './components/HeroSection/HeroSection.jsx';
 import DividerSection from './components/DividerSection/Divider.jsx';
   import './App.css';
@@ -13,8 +16,10 @@ import CourseSection from './components/CourseSection/Course.jsx';
 import AcademicStages from './components/AcademicStages/AcademicStages.jsx';
 import Footer from './components/FooterSection/Footer.jsx';
 
-
+// import {useTheme} from './context/ThemeContext.jsx'
 function App() {
+  // const { isDark, toggleTheme } = useTheme();
+
 
   return (
     <>
@@ -27,7 +32,6 @@ function App() {
       <CourseSection/> 
       <AcademicStages/>
       <Footer/>
-
         
     </>
   )
