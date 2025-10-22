@@ -29,8 +29,8 @@ import {
 
 import styled from "styled-components";
 
-// import logo0 from "./logo0.png";
-import logo from "./logo.svg";
+import logo0 from "./logo0.png";
+// import logo from "./logo.svg";
 
 const products = [
   {
@@ -178,7 +178,7 @@ export default function Navbar() {
 
   return (
     <section className={`${darkMode ? "bg-gray-900 text-white" : ""}`}>
-    <header className={`fixed top-0 left-0 w-full z-50 shadow-sm border-b border-gray-200 dark:border-gray-700 ${darkMode ? "dark:bg-gray-800 dark:text-white" : "bg-white"}  `}>
+    <header className={`fixed top-0 left-0 w-full z-50 shadow-xl/50  border-gray-200 dark:border-gray-700 ${darkMode ? "dark:bg-gray-800 dark:text-white" : "bg-white"}  `}>
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-8xl items-center justify-between px-3 lg:px-8 py-1" 
@@ -189,12 +189,12 @@ export default function Navbar() {
             <div className="h-25 w-25 flex items-center">
               <img
                 alt=""
-                src={logo}
+                src={logo0}
                 className="h-full w-full object-contain mt-2"
               />
             </div>
 
-            <h2 className="sr-nly text-2xl  hover:text-gray-700">
+            <h2 className="sr-nly text-2xl  hover:">
               منصة <span>للرياضيات</span>
             </h2>
           </a>
@@ -215,39 +215,42 @@ export default function Navbar() {
         {/* Links In Large Screen 3*/}
         <PopoverGroup className="hidden lg:flex flex-2 lg:gap-x-10 items-center justify-center ">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1  text-sm/6 font-semibold mb-3 hover:text-emerald-600">
+            <PopoverButton className={`flex items-center gap-x-1  text-sm/6 font-semibold mb-3  text font-medium transition-all duration-300 
+             hover:text-transparent hover:bg-clip-text 
+             hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500  `}  >
               المراحل الدراسية
               <ChevronDownIcon
                 aria-hidden="true"
-                className="size-5 text-gray-800"
+                className="size-5"
               />
             </PopoverButton>
 
             <PopoverPanel
               transition
-              className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-3xl bg-white shadow-lg outline-1 outline-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+              className={`absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-3xl bg-white shadow-lg outline-1 outline-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in
+                ${darkMode ? "bg-gray-300 text-white" : '' }`}
             >
-              <div className="p-4">
+              <div className={`p-4  ${darkMode ? "bg-gray-800 text-white " : '' }`}>
                 {products.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
+                    className={`group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6  ${darkMode ? "text-white hover:bg-gray-500" : 'hover:bg-gray-100'} `}
                   >
-                    <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <div className="flex size-11 flex-none items-center justify-center rounded-lg bg">
                       <item.icon
                         aria-hidden="true"
                         className="size-6 text-gray-600 group-hover:text-indigo-600"
                       />
                     </div>
-                    <div className="flex-auto">
+                    <div className={`flex-auto `}>
                       <a
                         href={item.href}
-                        className="block font-semibold text-gray-900"
+                        className={`block font-semibold ${darkMode ? "bg-dark-300 text-gray-100" : '' }`}
                       >
                         {item.name}
-                        <span className="absolute inset-0" />
+                        <span className={`absolute inset-0 ${darkMode ? "text-gray-100" : '' }`} />
                       </a>
-                      <p className="mt-1 text-gray-600">{item.description}</p>
+                      <p className="mt-1 text-gray-400">{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -256,7 +259,7 @@ export default function Navbar() {
             </PopoverPanel>
           </Popover>
 
-          <a href="#" className="text-sm/6 font-semibold ">
+          <a href="#" className="text-sm/6 font-semibold hover:text-pink">
             الكتب
           </a>
           <a href="#" className="text-sm/6 font-semibold">
@@ -295,50 +298,52 @@ export default function Navbar() {
         </div>
         {/* Mobile Menu 5*/}
         <Dialog
-          className="lg:hidden sm:order-last"
+          className={`lg:hidden sm:order-last`}
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
+          //
         >
-          <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
+          <div className={`fixed inset-0 z-50  ${darkMode ? "bg-gray-900 dark:text-white " : "bg-white text-gray-900"}`}/>
+          <DialogPanel className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto p-6  sm:ring-1 transition-colors duration-300
+    `}>
+            <div className={`flex items-center justify-between `}>
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 <img
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                  src={logo0}
                   className="h-8 w-auto"
                 />
               </a>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className={`-m-2.5 rounded-md p-2.5 ${darkMode ? "text-white" : ''}`}
               >
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon aria-hidden="true" className="size-6" />
               </button>
             </div>
             {/* Product in Small Screen */}
-            <div className="mt-6 flow-root">
+            <div className={`mt-6 flow-root `}>
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   <Disclosure as="div" className="-mx-3">
                     {/*  */}
-                    <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                    <DisclosureButton className={`group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold   hover:bg-gray-50' ${darkMode ? "text-white" : ''}`}>
                       المراحل الدراسية
                       <ChevronDownIcon
                         aria-hidden="true"
-                        className="size-5 flex-none group-data-open:rotate-180"
+                        className={`size-5 flex-none group-data-open:rotate-180  ${darkMode ? "bg-gray-900 text-gray-100" : "bg-white text-gray-900"}`}
                       />
                     </DisclosureButton>
-                    <DisclosurePanel className="mt-2 space-y-2">
+                    <DisclosurePanel className={`mt-2 space-y-2  ${darkMode ? "text-white" : ''}`}>
                       {[...products].map((item) => (
                         <DisclosureButton
                           key={item.name}
                           as="a"
                           href={item.href}
-                          className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
+                          className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold hover:bg-gray-50"
                         >
                           {item.name}
                         </DisclosureButton>
@@ -348,13 +353,13 @@ export default function Navbar() {
                   {/* اللينكات في الشاشات الصغيره */}
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50 ${darkMode ? "text-white" : ''}`}
                   >
                     الكورسات
                   </a>
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50 ${darkMode ? "text-white" : ''}`}
                   >
                     الكتب
                   </a>
