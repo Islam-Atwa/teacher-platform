@@ -300,6 +300,7 @@ export default function Navbar() {
           className={`lg:hidden sm:order-last `}
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
+          //
         >
           <div className={`fixed inset-0 z-50  ${darkMode ? "bg-gray-900 dark:text-white " : "bg-white text-gray-900"}`}/>
           <DialogPanel className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto p-6 sm:max-w-sm sm:ring-1 transition-colors duration-300
