@@ -215,9 +215,9 @@ export default function Navbar() {
         {/* Links In Large Screen 3*/}
         <PopoverGroup className="hidden lg:flex flex-2 lg:gap-x-10 items-center justify-center ">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1  text-sm/6 font-semibold mb-3  text-gray-900 dark:text-white font-medium transition-all duration-300 
+            <PopoverButton className={`flex items-center gap-x-1  text-sm/6 font-semibold mb-3  text font-medium transition-all duration-300 
              hover:text-transparent hover:bg-clip-text 
-             hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500">
+             hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500  `}  >
               المراحل الدراسية
               <ChevronDownIcon
                 aria-hidden="true"
@@ -227,29 +227,30 @@ export default function Navbar() {
 
             <PopoverPanel
               transition
-              className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-3xl bg-white shadow-lg outline-1 outline-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+              className={`absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-3xl bg-white shadow-lg outline-1 outline-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in
+                ${darkMode ? "bg-gray-300 text-white" : '' }`}
             >
-              <div className="p-4">
+              <div className={`p-4  ${darkMode ? "bg-gray-800 text-white " : '' }`}>
                 {products.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
+                    className={`group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6  ${darkMode ? "text-white hover:bg-gray-500" : 'hover:bg-gray-100'} `}
                   >
-                    <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <div className="flex size-11 flex-none items-center justify-center rounded-lg bg">
                       <item.icon
                         aria-hidden="true"
                         className="size-6 text-gray-600 group-hover:text-indigo-600"
                       />
                     </div>
-                    <div className="flex-auto">
+                    <div className={`flex-auto `}>
                       <a
                         href={item.href}
-                        className="block font-semibold text-gray-900"
+                        className={`block font-semibold ${darkMode ? "bg-dark-300 text-gray-100" : '' }`}
                       >
                         {item.name}
-                        <span className="absolute inset-0" />
+                        <span className={`absolute inset-0 ${darkMode ? "text-gray-100" : '' }`} />
                       </a>
-                      <p className="mt-1 text-gray-600">{item.description}</p>
+                      <p className="mt-1 text-gray-400">{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -297,13 +298,13 @@ export default function Navbar() {
         </div>
         {/* Mobile Menu 5*/}
         <Dialog
-          className={`lg:hidden sm:order-last `}
+          className={`lg:hidden sm:order-last`}
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
           //
         >
           <div className={`fixed inset-0 z-50  ${darkMode ? "bg-gray-900 dark:text-white " : "bg-white text-gray-900"}`}/>
-          <DialogPanel className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto p-6 sm:max-w-sm sm:ring-1 transition-colors duration-300
+          <DialogPanel className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto p-6  sm:ring-1 transition-colors duration-300
     `}>
             <div className={`flex items-center justify-between `}>
               <a href="#" className="-m-1.5 p-1.5">
@@ -317,7 +318,7 @@ export default function Navbar() {
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`-m-2.5 rounded-md p-2.5 text-red-700 ${darkMode ? "text-white" : ''}`}
+                className={`-m-2.5 rounded-md p-2.5 ${darkMode ? "text-white" : ''}`}
               >
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon aria-hidden="true" className="size-6" />

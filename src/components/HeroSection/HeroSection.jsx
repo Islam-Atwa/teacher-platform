@@ -22,10 +22,10 @@ function HeroSection() {
 
   const {darkMode} = useTheme();
   return (
-    <section className={`hero ${darkMode ? "bg-gray-900 text-white h-full" : "bg-gray-200"}`}>
+    <section className={`hero ${darkMode ? "dark" : ''}`}>
       <div
-        className="mx-auto px-12 grid grid-cols-1 md:text-center lg:grid-cols-2 lg:text-start gap-8
-                   max-w-7xl max-w-screen-xl !mb-0 !pb-0 py-8 lg:py-16 "
+        className={`mx-auto px-12 grid grid-cols-1 md:text-center lg:grid-cols-2 lg:text-start gap-8
+                   max-w-7xl max-w-screen-xl !mb-0 !pb-0 py-8 lg:py-16  ${darkMode ? "text-white" : ''}`}
       >
         {/* Text */}
         <div className="flex flex-col justify-center">
@@ -38,7 +38,7 @@ function HeroSection() {
             </h1>
           </div>
 
-          <p className="mb-8 text-lg lg:text-xl max-w-md text-gray-700 mx-auto md:mx-auto lg:mx-0">
+          <p className={`mb-8 text-lg lg:text-xl max-w-md text-gray-700 mx-auto md:mx-auto lg:mx-0  ${darkMode ? "text-stone-300" : 'text-gray-650' }`}>
             إبدأ قصة نجاحك مع أستاذ إبراهيم عطوة
             <br />
             واحصل علي الدرجة النهائية في مواد الرياضيات مع شرح مبسط وأقوي نظام
@@ -122,11 +122,11 @@ function HeroSection() {
 
           {/* Features */}
           <div
-            className="mt-8 flex flex-wrap gap-2 justify-center lg:justify-start"
+            className={`mt-8 flex flex-wrap gap-2 justify-center lg:justify-start`}
             data-v-38949684=""
           >
             <div
-              className="flex items-center gap-2 px-2 py-1 text-black bg-white rounded-full shadow-md backdrop-blur-sm"
+              className={`flex items-center gap-2 px-2 py-1 rounded-full shadow-md backdrop-blur-sm ${darkMode ? "bg-gray-700 text-white" : 'bg-white text-gray-950' }`}
               data-v-38949684=""
             >
               <div
@@ -134,7 +134,7 @@ function HeroSection() {
                 data-v-38949684=""
               ></div>
               <span
-                className="text-sm font-medium text-gray-950"
+                className={`text-sm font-medium `}
                 data-v-38949684=""
               >
                 دراسة تفاعلية مذهلة ✨
@@ -142,7 +142,7 @@ function HeroSection() {
             </div>
 
             <div
-              className="flex items-center gap-2 px-2 py-1 bg-white rounded-full shadow-md backdrop-blur-sm"
+              className={`flex items-center gap-2 px-2 py-1 rounded-full shadow-md backdrop-blur-sm ${darkMode ? "bg-gray-700 text-white" : 'bg-white text-gray-950' }`}
               data-v-38949684=""
             >
               <div
@@ -150,14 +150,14 @@ function HeroSection() {
                 data-v-38949684=""
               ></div>
               <span
-                className="text-sm font-medium text-gray-950"
+                className="text-sm font-medium"
                 data-v-38949684=""
               >
                 محتوى عالي الجودة 🎯
               </span>
             </div>
             <div
-              className="flex items-center gap-2 px-2 py-1 bg-white rounded-full shadow-md backdrop-blur-sm"
+              className={`flex items-center gap-2 px-2 py-1 rounded-full shadow-md backdrop-blur-sm ${darkMode ? "bg-gray-700 text-white" : 'bg-white text-gray-950' }`}
               data-v-38949684=""
             >
               <div
@@ -165,7 +165,7 @@ function HeroSection() {
                 data-v-38949684=""
               ></div>
               <span
-                className="ttext-sm font-medium text-gray-950"
+                className="text-sm font-medium"
                 data-v-38949684=""
               >
                 دعم متواصل💪
