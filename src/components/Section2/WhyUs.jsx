@@ -5,18 +5,19 @@ import quizIcon from '../Section2/quizIcon.png';
 import supportIcon from '../Section2/supportIcon.png';
 import analysisIcon from '../Section2/analysisIcon.png';
 import studentMath from '../Section2/matstudentAI.png';
+// 
 
 import {useTheme} from '../Context/ThemeContext'
 
 // import studentMath from '../Section2/studentMath.svg';
-import './WhyUs.css';
+import '../Section2/WhyUs.css';
 function WhyUs() {
     const {darkMode} = useTheme();
     return (
       <section
         className={`${darkMode ? "dark:bg-gray-800 dark:text-white" : ""}`}
       >
-        <div className="mx-auto px-8">
+        <div className="mx-auto px-8 ">
           <h1 className="max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
             ليه تذاكر معانا
             <span className=" font-extrabold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4 leading-tight">

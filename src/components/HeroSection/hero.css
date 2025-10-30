@@ -1,5 +1,5 @@
 :root {
-    --bg: rgb(212, 223, 223);
+    --bg: rgb(232, 235, 235);
     --grid-thin: rgba(73, 72, 72, 0.175);
     --grid-bold: rgb(177, 175, 175);
     --text: #e1e2e6;
@@ -25,7 +25,7 @@ body {
     display: grid;
     place-items: center;
     background-color: var(--bg);
-    background-image:
+    background-image:   
         linear-gradient(to right, var(--grid-thin) 1px, transparent 1px),
         linear-gradient(to bottom, var(--grid-thin) 1px, transparent 1px),
         linear-gradient(to right, var(--grid-bold) 1px, transparent 1px),

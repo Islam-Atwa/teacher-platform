@@ -18,7 +18,6 @@ import Footer from './components/FooterSection/Footer.jsx';
 
 // import {useTheme} from './context/ThemeContext.jsx'
 function App() {
-  // const { isDark, toggleTheme } = useTheme();
 
 
   return (

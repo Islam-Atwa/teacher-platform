@@ -40,7 +40,7 @@ const Course = () => {
               />
 
               {/* Card content */}
-              <div className="w-full h-44 object-cover">
+              <div className="w-full h-44 object-cover ">
                 {/* Stage */}
                 <div className="flex items-center mt-3 gap-2">
                   <img

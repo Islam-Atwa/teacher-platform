@@ -1,5 +1,5 @@
-import test from '../CourseSection/test.jpg';
-import star from '../CourseSection/star.png';
+// import test from '../CourseSection/test.jpg';
+// import star from '../CourseSection/star.png';
 const courseData=[
     {
         id:1,
@@ -19,6 +19,6 @@ const courseData=[
     },         
 ];
 
-console.log(` the type is ${typeof courseData}`)
+console.log(typeof (courseData))
 
 export default courseData;
