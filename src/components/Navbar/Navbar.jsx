@@ -168,7 +168,7 @@ const StyledWrapper = styled.div`
   transform: translateX(30px);
 }
 `;
-export default function Navbar() {
+export const Navbar= ()=> {
 
   // Dark and light mode feature
   const {darkMode, toggleTheme} = useTheme();

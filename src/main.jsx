@@ -5,8 +5,8 @@ import 'flowbite';
 import "@tailwindplus/elements";
 // import "@tailwindplus/elements/style.css";
 
-import {ThemeProvider} from './components/Context/ThemeContext.jsx'
-
+import {ThemeProvider} from './components/Context/ThemeContext.jsx';
+import { BrowserRouter} from 'react-router-dom';
 // import { ThemeProvider } from './context/ThemeContext.jsx';
 
 
@@ -16,8 +16,8 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
   </StrictMode>
 )

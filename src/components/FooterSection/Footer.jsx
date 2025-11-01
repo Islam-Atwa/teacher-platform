@@ -1,6 +1,6 @@
 import logo from "../Navbar/logo0.png";
 
-const Footer = ()=>{
+export const Footer = ()=>{
     return(
       <footer className="bg-gray-950 text-white px-6 py-6 ">
   <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
@@ -102,4 +102,3 @@ const Footer = ()=>{
 }
 
 
-export default Footer;

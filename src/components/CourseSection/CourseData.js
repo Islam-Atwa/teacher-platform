@@ -17,6 +17,14 @@ const courseData=[
         price : '150',
         icon: star,
     },         
+    {
+        id:2,
+        title: 'كو رس أساسيات الرياضيات',
+        description: 'فيالكورس دا هيساعدك تراجع علي الفاتك ',
+        img: test,
+        price : '150',
+        icon: star,
+    },         
 ];
 
 console.log(` the type is ${typeof courseData}`)
