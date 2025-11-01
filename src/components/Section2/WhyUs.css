@@ -20,3 +20,10 @@
 }
 
 
+.dark {
+  --bgColor: rgb(2, 6, 23);
+  --gtColor1: hsl(210, 32.39%, 27.84%);
+  --gtColor2: hsl(195, 19.05%, 58.82%);
+  --textColor: hsl(0, 0%, 96.08%);
+  --textColor2: hsl(0, 83.87%, 63.53%);
+}

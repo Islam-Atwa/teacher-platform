@@ -1,5 +1,5 @@
-import test from '../CourseSection/test.jpg';
-import star from '../CourseSection/star.png';
+// import test from '../CourseSection/test.jpg';
+// import star from '../CourseSection/star.png';
 const courseData=[
     {
         id:1,
@@ -17,16 +17,8 @@ const courseData=[
         price : '150',
         icon: star,
     },         
-    {
-        id:2,
-        title: 'كو رس أساسيات الرياضيات',
-        description: 'فيالكورس دا هيساعدك تراجع علي الفاتك ',
-        img: test,
-        price : '150',
-        icon: star,
-    },         
 ];
 
-console.log(` the type is ${typeof courseData}`)
+console.log(typeof (courseData))
 
 export default courseData;

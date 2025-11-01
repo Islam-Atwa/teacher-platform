@@ -25,7 +25,7 @@ const AcademicStages = () => {
           ].map((stage, i) => (
             <div
               key={i}
-              className={` mb-32 rounded-xl border p-4 shadow-sm transition hover:shadow-lg sm:p-6 
+              className={` mb-32 rounded-xl border p-4 shadow-sm transition hover:shadow-lg sm:p-6  cursor-pointer
                 ${darkMode
                   ? "border-gray-700 bg-gray-800 text-gray-100 hover:bg-gray-700 hover:border-gray-600"
                   : "border-gray-200 bg-white text-gray-800 hover:bg-gray-50 hover:border-gray-300"}`

@@ -1,6 +1,9 @@
 import React from "react";
 import courseData from "../CourseSection/CourseData";
 import { useTheme } from "../Context/ThemeContext";
+import { Link } from 'react-router-dom';
+
+// import {Br}
 
 const Course = () => {
   const { darkMode } = useTheme();
@@ -23,8 +26,9 @@ const Course = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mr-6 cursor-pointer">
           {courseData.map((course) => (
-            <div
+            <Link
               key={course.id}
+              to={`/course/${course.id}`}
               className={`rounded-lg border p-4 mb-12 shadow-sm transition-all hover:shadow-lg sm:p-6 flex flex-col overflow-hidden 
                 ${
                   darkMode
@@ -92,7 +96,7 @@ const Course = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

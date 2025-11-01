@@ -58,6 +58,7 @@ const products = [
 //   { name: "Watch demo", href: "#", icon: PlayCircleIcon },
 //   { name: "Contact sales", href: "#", icon: PhoneIcon },
 // ];
+
 const StyledWrapper = styled.div`
 .switch {
   font-size: 17px;
@@ -167,14 +168,11 @@ const StyledWrapper = styled.div`
   transform: translateX(30px);
 }
 `;
-export default function Navbar() {
+export const Navbar= ()=> {
+
+  // Dark and light mode feature
   const {darkMode, toggleTheme} = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  // const { isDark, toggleTheme } = useTheme();
-
-
-
-
 
   return (
     <section className={`${darkMode ? "bg-gray-900 text-white" : ""}`}>
