@@ -4,6 +4,8 @@ import student3 from '../HeroSection/student3.png';
 import { Player } from '@lordicon/react';
 import bookIcon from '../HeroSection/bookAnimate3.json';
 import {useTheme} from '../Context/ThemeContext'
+// import { Button } from "@/components/ui/button"
+
 
 // import wave from "../HeroSection/wave.svg";
 
@@ -56,6 +58,7 @@ function HeroSection() {
                 <span className="text-lg tracking-wide">
                   ابدأ قصة نجاحك الآن
                 </span>
+                {/* <Button>HELLLO SHDN UI</Button> */}
                 <i className="book bg-gray-100 rounded-full p-1.5 shadow-md flex items-center justify-center">
                   <Player ref={playerRef} icon={bookIcon} loading={lazy} loop />
                 </i>
