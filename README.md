@@ -109,20 +109,19 @@ This project is a modern responsive web application built with React, TailwindCS
 ``` 
 ## Screenshot
 
-<table>
+<table width="100%">
   <tr>
     <td width="33%" valign="top">
-      <h3 align="center">Mobile Screen</h3>
+      <h3 align="center">تجربة الموبايل</h3>
       <p align="center">
         <img src="./screenshots/mobile-screenshot.png" alt="لقطة شاشة الموبايل" style="max-width: 100%; height: auto; border-radius: 8px;">
       </p>
     </td>
     <td width="66%" valign="top">
-      <h3 align="center">Desktop Screen</h3>
+      <h3 align="center">واجهة الديسك توب</h3>
       <p align="center">
         <img src="./screenshots/desktop-screenshot.png" alt="لقطة شاشة الديسك توب" style="max-width: 100%; height: auto; border-radius: 8px;">
       </p>
     </td>
   </tr>
 </table>
-
