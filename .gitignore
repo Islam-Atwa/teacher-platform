@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# ignor folder 'ConvertHtmlToJsx'
+ConvertHtmlToJsx/
+
 # ignore readme file 
 README.md
 
