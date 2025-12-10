@@ -11,6 +11,24 @@ This project is a modern responsive web application built with React, TailwindCS
 - [Tailwind CSS](https://tailwindcss.com/)
 - [shadcn/ui](https://ui.shadcn.com/)
 
+## Screenshot
+<table width="100%" align="center">
+  <tr>
+    <td width="65%" valign="top">
+      <h3 align="center">Desktop Screen</h3>
+      <p align="center">
+        <img src="src/assets/Desktop-Screen.png" alt="لقطة شاشة الديسك توب" style="max-width: 100%; height: auto; border-radius: 8px;">
+      </p>
+    </td>
+    <td width="35%" valign="top">
+      <h3 align="center">Mobile Screen </h3>
+      <p align="center">
+        <img src="src/assets/Mobile-Screen.png" alt="لقطة شاشة الموبايل" style="width: 100%; height: auto; border-radius: 8px;">
+      </p>
+    </td>
+  
+  </tr>
+</table>
 
 ## File Structure
 ```.
@@ -107,21 +125,4 @@ This project is a modern responsive web application built with React, TailwindCS
 │   │   └─ utils.ts
 │   └─ main.jsx
 ``` 
-## Screenshot
-<table width="100%" align="center">
-  <tr>
-    <td width="77%" valign="top">
-      <h3 align="center">Desktop Screen</h3>
-      <p align="center">
-        <img src="./screenshots/desktop-screenshot.png" alt="لقطة شاشة الديسك توب" style="max-width: 100%; height: auto; border-radius: 8px;">
-      </p>
-    </td>
-    <td width="33%" valign="top">
-      <h3 align="center">Mobile Screen </h3>
-      <p align="center">
-        <img src="./screenshots/mobile-screenshot.png" alt="لقطة شاشة الموبايل" style="max-width: 100%; height: auto; border-radius: 8px;">
-      </p>
-    </td>
-  
-  </tr>
-</table>
+
