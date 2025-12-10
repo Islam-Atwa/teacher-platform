@@ -9,7 +9,7 @@ import {Navbar} from './components/Navbar/Navbar.jsx'; // NavBar 0
 import HeroSection from './components/HeroSection/HeroSection.jsx'; //Hero Section 1
 import WhyUs from './components/Section2/WhyUs.jsx';
 
-import courseData from './components/CourseSection/CourseData.js'
+import courseData from './data/CourseData.js'
 
 import DividerSection from './components/DividerSection/Divider.jsx';
   import './App.css';

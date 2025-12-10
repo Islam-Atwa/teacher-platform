@@ -1,5 +1,5 @@
 import React from "react";
-import courseData from "../CourseSection/CourseData";
+import courseData from "../../data/CourseData";
 import { useTheme } from "../Context/ThemeContext";
 import { Link } from 'react-router-dom';
 
@@ -59,7 +59,7 @@ const Course = () => {
                       darkMode ? "text-gray-300" : "text-gray-700"
                     }`}
                   >
-                    الصف الثالث الثانوي
+                    {course.stage}
                   </span>
                 </div>
 
