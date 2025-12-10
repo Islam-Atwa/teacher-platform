@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useParams } from 'react-router-dom';
 import { 
   Accordion,
   AccordionContent,
@@ -9,6 +9,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { PlaySquare } from 'lucide-react';
 import { useTheme } from '../Context/ThemeContext';
+import courseData from '../../data/CourseData.js';
 
 // بيانات الكورس: الوحدات والفيديوهات 
 const courseUnits = [
@@ -52,11 +53,11 @@ export const CoursePage = () => {
   // Dark And Light Mode
   const {darkMode} = useTheme();
 
+
   // حالة لتخزين رابط الفيديو الحالي وعنوانه - تم استخدام قيمة افتراضية آمنة
   const [currentVideoUrl, setCurrentVideoUrl] = useState(initialVideo.link); // لينك الفيديو المعروض وواخد قيمة ابتدائية اول فيديو في array
   const [currentVideoTitle, setCurrentVideoTitle] = useState(initialVideo.title);
   const [currentVideoDescriotion, setCurrentVideoDescription] = useState(initialVideo.description)
-
 
   const handleVideoSelect = (url, title, description) => { 
     setCurrentVideoUrl(url); // تحديث رابط الفيديو الحالي
@@ -65,7 +66,7 @@ export const CoursePage = () => {
   };
 
   return (
-    <div className={`mx-auto py-22 px-12 ${darkMode ? "dark:bg-gray-800 dark:text-white" : ''}`}>
+    <div className={`mx-auto py-32 px-12 ${darkMode ? "dark:bg-gray-800 dark:text-white" : ''}`}>
       <header className="title-course pb-6 border-b mb-6 text-start">
         <h1 className ={`text-3xl font-extrabold text-primary ${darkMode ? 'dark:bg-gray-800 text-white' : ""}`}>كورس أساسيات الرياضيات</h1>
 
