@@ -26,9 +26,10 @@ This project is a modern responsive web application built with React, TailwindCS
         <img src="src/assets/Mobile-Screen.png" alt="لقطة شاشة الموبايل" style="width: 100%; height: auto; border-radius: 8px;">
       </p>
     </td>
-  
   </tr>
 </table>
+<h3 align="center">Dark Mode</h3>
+<img src="src/assets/Dark-Mode.png"  width="100%"/>
 
 ## File Structure
 ```.
