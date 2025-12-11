@@ -31,6 +31,10 @@ This project is a modern responsive web application built with React, TailwindCS
 <h3 align="center">Dark Mode</h3>
 <img src="src/assets/Dark-Mode.png"  width="100%"/>
 
+<h3 align="center">Course Page</h3>
+<img src="src/assets/course-page screen.png" />
+
+
 ## File Structure
 ```.
 ├─ .gitignore
